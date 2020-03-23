@@ -10,7 +10,6 @@ app.get('/products', (req, res) => {
     const skip = parseInt(req.query.skip) || 1;         // this is the current page
 
     Product.find()
-        .populate('category')
         .limit(limit)
         .skip(skip)
         .then(products => res.status(200).send(products))
