@@ -20,7 +20,11 @@ app.get('/products', (req, res) => {
 ## Searching
 I also decided to use a url query as my search term. mongodb has a very handy text index which can be used for searching through collections. This text index will remove all generic words like 'and', 'or' and 'the' and include all non generic words when doing a search using the $text and $search operators. Therefore I created a compound text index which includes the name, description and cat fields, allowing me to search all 3 fields in a single query.
 
+To add a text index, this must be entered into the mongo shell (or client, I use robo3T)
+
+
 When adding search functionality, the above route function changed to this:
+`db.getCollection('products').createIndex({ name: "text", description: "text", cat: "text" })`
 
 ```javascript
 app.get('/products', (req, res) => {
