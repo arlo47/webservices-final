@@ -18,3 +18,4 @@ app.get('/products', (req, res) => {
 ```
 
 ## Searching
+https://docs.mongodb.com/manual/text-search/
