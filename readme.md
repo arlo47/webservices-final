@@ -59,3 +59,8 @@ app.get('/products', (req, res) => {
 
 ### Using the skip query
 ![alt text](./img/search-limit-skip-intel.jpg "Logo Title Text 1")
+
+
+#### Sources
+https://docs.mongodb.com/manual/core/index-text/
+https://docs.mongodb.com/manual/reference/method/cursor.skip/
