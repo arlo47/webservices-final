@@ -51,4 +51,11 @@ app.get('/products', (req, res) => {
 });
 ```
 
-[logo]: ./img/search-intel.jpg "searching"
+### Using the search query
+![alt text](./img/search-intel.jpg "Logo Title Text 1")
+
+### Using limit query
+![alt text](./img/search-limit-intel.jpg "Logo Title Text 1")
+
+### Using the skip query
+![alt text](./img/search-limit-skip-intel.jpg "Logo Title Text 1")
