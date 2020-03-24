@@ -24,6 +24,7 @@ To add a text index, this must be entered into the mongo shell (or client, I use
 
 
 When adding search functionality, the above route function changed to this:
+
 `db.getCollection('products').createIndex({ name: "text", description: "text", cat: "text" })`
 
 ```javascript
@@ -67,4 +68,5 @@ app.get('/products', (req, res) => {
 
 #### Sources
 https://docs.mongodb.com/manual/core/index-text/
+
 https://docs.mongodb.com/manual/reference/method/cursor.skip/
